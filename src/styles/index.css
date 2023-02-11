@@ -1,0 +1,29 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Inter:wght@400;700&family=Lora:wght@400;700&display=swap');
+
+:root {
+    --body_background: white;
+    --body_color: #2D2D2D;
+    --font_family: 'Inter';
+    --moon-color:#757575;
+}
+
+[data-theme="dark-theme"]{
+    --body_background: #050505;
+    --body_color: white;
+    --moon-color:#A445ED;
+}
+
+[data-font="font-serif"]{
+    --font_family: 'Lora';
+}
+
+[data-font="font-mono"]{
+    --font_family: 'Inconsolata';
+}
+
+#root{
+    max-width: 738px;
+    margin: 0 auto;
+    padding: 0;
+}

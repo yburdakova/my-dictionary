@@ -1,0 +1,22 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 36px;
+    align-items: center;
+    margin: 55px auto;
+}
+
+.icon-icon_book:before{
+    font-size: 36px;
+}
+.line{
+    width: 1px;
+    height: 32px;
+    background-color: #E9E9E9;
+}
+.header__actions{
+    display: flex;
+    width: 251px;
+    justify-content: space-between;
+}
