@@ -6,17 +6,26 @@ header{
     align-items: center;
     margin: 55px auto;
 }
-
-.icon-icon_book:before{
-    font-size: 36px;
-}
 .line{
     width: 1px;
     height: 32px;
     background-color: #E9E9E9;
+    margin: 0 26px;
+}
+
+@media (max-width: 480px) { 
+    header{
+        margin: 24px auto;
+    }
+    .line{
+        margin: 0 16px ;
+    }
 }
 .header__actions{
     display: flex;
     width: 251px;
-    justify-content: space-between;
+}
+
+.icon-icon_book:before{
+    font-size: 36px;
 }

@@ -10,10 +10,10 @@
   font-display: block;
 }
 
-[class^="icon-"]::before, [class*=" icon-"]::before {
+[class^="icon-"]::before, [class*=" icon-"]::before, [class*=" icon-"]::after {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: never;
+  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -29,7 +29,7 @@
   content: "\e901";
   color: #757575;
 }
-.icon-icon-arrow:before {
+.icon-icon-arrow::before {
   content: "\e900";
 }
 .icon-icon_half-moon:before {

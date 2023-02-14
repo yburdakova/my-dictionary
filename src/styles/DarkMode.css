@@ -1,7 +1,9 @@
 .dark_mode{
     display:flex;
-    max-width: 80px;
+    width: 80px;
     justify-content: space-between;
+    align-items: center;
+
 }
 .dark_mode_label {
     margin-left: -20px;
