@@ -26,7 +26,8 @@ const App = () => {
   const data = {
     word: results.map(item => item.word)[0],
     phonetic: results.map(item => item.phonetic)[0],
-    audioLink:results.map(item => item.phonetics.filter(item => item.audio !== "")[0].audio)[0]
+    audioLink:results.map(item => item.phonetics.filter(item => item.audio !== "")[0].audio)[0],
+    meanings:[],
   }
 
   const onSearchChange = (e) => {
