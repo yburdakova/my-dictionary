@@ -28,7 +28,7 @@ const DarkMode = () => {
             />
             <label
             className="dark_mode_label"
-            for="darkmode_toggle"
+            htmlFor="darkmode_toggle"
             ></label>
             <div className="icon-icon_half-moon"></div>
         </div>
