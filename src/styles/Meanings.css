@@ -1,3 +1,89 @@
+.meanings__container{
+    overflow: hidden;
+}
+.meanings__title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25px;
+    margin-top: 40px;
+}
+.meanings__title::after{
+    content:"";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 1px;
+    background-color: #E9E9E9;
+    position: relative;
+    margin-right: -100%;
+    right: -20px;
+}
+.meanings__subtitle{
+    font-size: 20px;
+    line-height: 21px;
+    color: #757575;
+    margin-top: 40px;
+}
+.meanings__defenition{
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 13px;
+    list-style-type: none!important; 
+    position: relative;
+}
+.meanings__defenition::before{
+    color: #8F19E8; 
+    content: "•"; 
+    left: -20px;
+    position: absolute;
+}
 .meanings__example{
-    color: blue;
+    font-size: 18px;
+    line-height: 24px;
+    color: #757575;
+    margin-top: 13px;
+}
+.meanings__example::before,
+.meanings__example::after {
+    content: '"';
+}
+.meanings__synonyms-container{
+display: flex;
+
+}
+.meanings__synonyms{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #A445ED;
+    margin-top: 40px;
+    margin-left: 22px;
+}
+.meanings__synonym:not(:last-child)::after{
+    content: ", ";
+}
+
+@media (max-width: 480px) {
+    .meanings__title{
+        font-size: 18px;
+        line-height: 22px;
+        margin-top: 12px;
+    }
+    .meanings__subtitle{
+        font-size: 16px;
+        line-height: 19px;
+        margin-top: 32px;
+    }
+    .meanings__defenition{
+        font-size: 15px;
+    }
+    .meanings__synonyms{
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 32px;
+    }
+    .meanings__example{
+        font-size: 15px;
+    }
+
 }

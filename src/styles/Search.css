@@ -48,6 +48,8 @@
     font-weight: 700;
     font-size: 64px;
     line-height: 77px;
+    word-wrap: break-word;
+    margin-right: 75px;
 }
 .word__phonetic{
     font-size: 24px;

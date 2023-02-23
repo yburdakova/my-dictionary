@@ -1,11 +1,14 @@
 import React from 'react';
+import '../styles/Source.css';
+import '../styles/index.css'
 
 const Source = (props) => {
     return (
-        <section>
-            <div>Source</div>
-            <div>{props.link}</div>
-            <a href={props.link} target="_blank" className='icon-icon_external-link'></a>
+        <section className='source__container'>
+                <div className='source__title'>Source</div>
+                <div className='source__text-link'><a href={props.link} target="_blank" >{props.link}</a></div>
+                <a href={props.link}  className='icon-icon_external-link'></a>
+
         </section>
     );
 };
