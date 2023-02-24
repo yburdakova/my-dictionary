@@ -6,10 +6,8 @@ import '../styles/icons-font.css'
 
 const DarkMode = () => {
 
-
     const setDarkMode = () => {
         document.querySelector("body").setAttribute('data-theme', 'dark-theme')
-
     };
 
     const setLightMode = () => {
