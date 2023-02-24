@@ -99,3 +99,34 @@ select {
     margin: 0 auto;
     padding: 0;
 }
+
+@media (prefers-color-scheme: dark) {
+  :root{
+    --body_background: #050505;
+    --body_color: white;
+    --moon-color:#A445ED;
+    --search_background:#1F1F1F;
+  }
+  [data-theme="light-theme"]{
+    --body_background: white;
+    --body_color: #2D2D2D;
+    --moon-color:#757575;
+    --search_background:#F4F4F4;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+      --body_background: white;
+      --body_color: #2D2D2D;
+      --moon-color:#757575;
+      --search_background:#F4F4F4;
+  }
+
+  [data-theme="dark-theme"]{
+      --body_background: #050505;
+      --body_color: white;
+      --moon-color:#A445ED;
+      --search_background:#1F1F1F;
+  }
+}

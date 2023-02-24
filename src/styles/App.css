@@ -1,3 +1,4 @@
+
 body{
     background-color: var(--body_background);
     color: var(--body_color);
@@ -10,8 +11,20 @@ body{
     max-width: 738rem;
     padding: 0 40px;
 }
+.woops{
+    font-size: 20px;
+    line-height: 24px;
+    color: #FF5252;
+    margin-top: 8px;
+}
+
 @media (max-width: 480px) {
     .App{
         padding: 0 24px;
     }
+    .woops{
+        font-size: 18px;
+        line-height: 23px;
+    }
 }
+

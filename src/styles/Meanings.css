@@ -77,6 +77,9 @@ display: flex;
     .meanings__defenition{
         font-size: 15px;
     }
+    .meanings__defenition::before{
+        font-size: 18px;
+    }
     .meanings__synonyms{
         font-size: 16px;
         line-height: 24px;

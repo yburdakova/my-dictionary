@@ -84,3 +84,12 @@
 .select__input-value{
     display: none;
 }
+
+@media (max-width: 480px) {
+    .select__list-item{
+        font-size: 14px;
+    }
+    .select__button{
+        font-size: 14px;
+    }
+}

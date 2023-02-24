@@ -7,7 +7,10 @@
     padding-top: 20px;
     align-items: center;
 }
-
+.source__link-container{
+    display: flex;
+    width: 90%;
+}
 .source__title{
     font-size: 14px;
     line-height: 17px;
@@ -17,7 +20,10 @@
 .source__text-link {
     margin: 0 9px 0 20px;
     text-decoration-line: underline;
-    color:--body_color;
+    color:var(--body_color);
+    overflow: hidden;
+    position: relative;
+
 }
 a,
 a:visited,
@@ -32,4 +38,17 @@ a:active {
 .icon-icon_external-link:hover{
     transform: scale(1.2);
     transition: all 0.3s ease 0s;
+}
+
+@media (max-width:480px){
+    .source__container{
+        display: block;
+    }
+    .source__text-link {
+        margin-left: 0;
+        font-size: 14px;
+    }
+    .source__link-container{
+        margin-top: 7px;
+    }
 }

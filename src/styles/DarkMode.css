@@ -11,7 +11,7 @@
     height: 20px;
     position: relative;
     display: block;
-    background: #757575;
+    background: var(--moon-color);
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
@@ -34,7 +34,7 @@
 }
 
 .dark_mode_input:checked + .dark_mode_label {
-    background: #A445ED;
+    background: var(--moon-color);
 }
 .dark_mode_input:checked + .dark_mode_label:after {
     left: 9px;
