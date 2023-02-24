@@ -100,7 +100,7 @@ select {
     padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root{
     --body_background: #050505;
     --body_color: white;
@@ -129,4 +129,4 @@ select {
       --moon-color:#A445ED;
       --search_background:#1F1F1F;
   }
-}
+} */

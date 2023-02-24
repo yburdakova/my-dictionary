@@ -21,10 +21,6 @@ const fetchResults = async (query) => {
   }
 };
 
-let id = 0;
-export function getUniqueId(i) {
-  return (id++ + i);
-}
 
 const App = () => {
 
@@ -34,6 +30,7 @@ const App = () => {
   const [emptyInput, setEmptyInput] = useState(true)
 
   const onSearchChange = (e) => {
+    e.preventDefault();
     setQuery(e.target.value);
   };
 
@@ -75,7 +72,7 @@ const App = () => {
                 audio={searchResult.filter(item => item.phonetics.length).map(item =>item.phonetics.map(item=> item.audio).filter(item => item!=="")[0])[0]}
           />
           {searchResult.map(item=> item.meanings.map((item,i) => 
-            <Meanings key={getUniqueId(i)} 
+            <Meanings key={(Math.floor(Math.random() * (1 - 300 + 1)) + 300)+i} 
                       partOfSpeech={item.partOfSpeech} 
                       definitions={item.definitions}
                       synonyms={item.synonyms}
