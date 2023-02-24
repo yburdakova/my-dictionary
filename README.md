@@ -38,8 +38,8 @@ Add a screenshot of your solution. The easiest way to do this is to use Firefox 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL:(https://dictionary.burdakova.com)
+- Solution URL: (https://github.com/yburdakova/my-dictionary)
+- Live Site URL: (https://dictionary.burdakova.com)
 
 ## Built with
 
